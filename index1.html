@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Maggie❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Georgia", serif;
+    background: #fff7f8;
+    color: #333;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Opening Screen */
+.opening {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ffe4ec, #fff8f5);
+    padding: 20px;
+}
+
+.opening h1 {
+    font-size: 42px;
+    color: #168b91;
+    margin-bottom: 15px;
+}
+
+.opening p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+button {
+    border: none;
+    background: #168b91;
+    color: pink;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px #0002;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Main Page */
+#birthdayPage {
+    display: none;
+    padding-bottom: 50px;
+}
+
+.hero {
+    min-height: 100vh;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: clamp(50px, 12vw, 110px);
+    color: #168b91;
+    line-height: .9;
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+    color: #e78ba5;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.photo {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 150px 150px 30px 30px;
+    border: 8px solid white;
+    box-shadow: 0 10px 35px #0003;
+}
+
+/* Message */
+.message {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 35px 25px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 8px 30px #0001;
+}
+
+.message h2 {
+    color: #168b91;
+    margin-bottom: 20px;
+}
+
+.message p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Gallery */
+.gallery {
+    padding: 50px 20px;
+}
+
+.gallery h2 {
+    color: #168b91;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.photos img {
+    width: 200px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #0002;
+    transition: .3s;
+}
+
+.photos img:hover {
+    transform: rotate(-2deg) scale(1.04);
+}
+
+/* Final Section */
+.final {
+    padding: 70px 20px;
+    background: #ffe8ef;
+}
+
+.final h2 {
+    font-size: 40px;
+    color: #168b91;
+    margin-bottom: 20px;
+}
+
+.final p {
+    font-size: 20px;
+    line-height: 1.7;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* Floating Hearts */
+.heart {
+    position: fixed;
+    bottom: -30px;
+    font-size: 25px;
+    animation: float 6s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+}
+
+@media(max-width:600px) {
+    .opening h1 {
+        font-size: 34px;
+    }
+
+    .hero {
+        padding-top: 35px;
+    }
+
+    .photo {
+        width: 240px;
+        height: 300px;
+    }
+
+    .photos img {
+        width: 140px;
+        height: 180px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Opening -->
+<section class="opening" id="opening">
+
+    <h1>✨ A Little Surprise ✨</h1>
+
+    <p>Someone special has a birthday today...</p>
+
+    <button onclick="openBirthday()">
+        Open Your Surprise ❤️
+    </button>
+
+</section>
+
+
+<!-- Birthday Page -->
+<div id="birthdayPage">
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <h1>HAPPY<br>BIRTHDAY</h1>
+
+        <h2>To Someone Very Special ❤️</h2>
+
+        <!-- Replace this image -->
+       <img src="mine8.jpeg" class="photo">
+
+    </section>
+
+
+    <!-- Message -->
+    <section class="message">
+
+        <h2>💌 A Little Message For You</h2>
+
+        <p>
+            Today is all about you. ❤️
+            I hope your day is filled with happiness,
+            beautiful moments and countless reasons to smile.
+            Keep being the wonderful person you are,
+            and never stop shining.
+        </p>
+
+    </section>
+
+
+    <!-- Memories -->
+    <section class="gallery">
+
+        <h2>🌸 Beautiful Memories 🌸</h2>
+
+        <div class="photos">
+
+            <!-- Replace these images -->
+        <img src="WhatsApp Image 2026-08-11 at 10.51.27 AM.jpeg">
+<img src="mine3.jpeg">
+<img src="mine4.jpeg">
+<img src="mine1.jpeg">
+
+        </div>
+
+    </section>
+
+
+    <!-- Final -->
+    <section class="final">
+
+        <h2>🎂 Happy Birthday ❤️</h2>
+
+        <p>
+            মোৰ মৰমৰ মেগী, জন্মদিনৰ বহুত বহুত শুভেচ্ছা! ❤️🎂
+            তোমাৰ জীৱনটো সদায় হাঁহি, মৰম আৰু সুখেৰে ভৰি থাকক। তুমি সদায় এনেকৈয়ে হাঁহি থাকিবা। ❤️✨
+            <br><br>
+
+          
+            <br><br>
+
+            <b>Enjoy your special day! ❤️</b>
+        </p>
+
+    </section>
+
+</div>
+
+
+<script>
+
+function openBirthday() {
+
+    document.getElementById("opening").style.display = "none";
+
+    document.getElementById("birthdayPage").style.display = "block";
+
+    createHearts();
+
+    window.scrollTo(0,0);
+}
+
+
+/* Floating hearts */
+
+function createHearts() {
+
+    setInterval(function() {
+
+        const heart = document.createElement("div");
+
+        heart.className = "heart";
+
+        heart.innerHTML = ["❤️","💕","💗","🌸","✨"][
+            Math.floor(Math.random()*5)
+        ];
+
+        heart.style.left = Math.random()*100 + "vw";
+
+        heart.style.animationDuration =
+            (4 + Math.random()*4) + "s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(function() {
+            heart.remove();
+        }, 8000);
+
+    }, 500);
+}
+
+</script>
+
+</body>
+</html>
